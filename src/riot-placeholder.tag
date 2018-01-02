@@ -1,3 +1,5 @@
+import foobarIpsum from 'foobar-ipsum'
+
 <ph>
   <style>
     @keyframes loading{
@@ -29,7 +31,7 @@
     }
   </style>
   <script>
-    const generator = new require('foobar-ipsum')()
+    const generator = new foobarIpsum()
     const type = this.root.localName
 
     switch (type) {
