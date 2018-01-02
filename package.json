@@ -34,10 +34,12 @@
     "babel-eslint": "^7.2.3",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
+    "browserify": "^14.5.0",
     "eslint": "4.1.1",
     "eslint-loader": "1.6.1",
     "eslint-plugin-riot": "^0.1.7",
     "foobar-ipsum": "1.0.3",
-    "riot": "^3.7.4"
+    "riot": "^3.7.4",
+    "riotify": "^2.0.0"
   }
 }
