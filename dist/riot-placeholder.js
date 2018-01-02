@@ -1,32 +1,4 @@
-<ph>
-  <style>
-    @keyframes loading{
-      0%{
-        background-position: -468px 0
-      }
-      100%{
-        background-position: 468px 0
-      }
-    }
-    :scope span.ph-mask {
-      cursor: default;
-      animation-duration: 2s;
-      animation-fill-mode: forwards;
-      animation-iteration-count: infinite;
-      animation-name: loading;
-      animation-timing-function: linear;
-      background: #f6f7f8;
-      background: linear-gradient(to right, #eeeeee 8%, #cccccc 18%, #eeeeee 33%);
-      background-size: 1000px 104px;
-      height: 338px;
-      position: relative;
-      overflow: hidden;
-    }
-    :scope.ph-img {
-      display: block;
-    }
-  </style>
-  <script>
+riot.tag2('ph', '', '@keyframes loading{ 0%{ background-position: -468px 0 } 100%{ background-position: 468px 0 } } ph span.ph-mask,[data-is="ph"] span.ph-mask{ cursor: default; animation-duration: 2s; animation-fill-mode: forwards; animation-iteration-count: infinite; animation-name: loading; animation-timing-function: linear; background: #f6f7f8; background: linear-gradient(to right, #eeeeee 8%, #cccccc 18%, #eeeeee 33%); background-size: 1000px 104px; height: 338px; position: relative; overflow: hidden; } ph.ph-img,[data-is="ph"].ph-img{ display: block; }', '', function(opts) {
     const generator = new foobarIpsum()
     const type = this.root.localName
 
@@ -71,5 +43,4 @@
         this.root.src = `http://via.placeholder.com/${this.root.height}x${this.root.width}`
         break
     }
-  </script>
-</ph>
+});
