@@ -65,5 +65,12 @@ Once available, **riot-placeholder** can be used like so:
 
 * **John Nolette** (john@neetgroup.net)
 
+Contributing guidelines are as follows,
+
+* Any new features must include either unit test.
+* Branches for bugs and features should be structued like so, `issue-x-username`.
+* Before putting in a pull request, be sure to verify you've built all your changes.
+* Include your name and email in the contributors list.
+
 ---
 Copyright (c) 2017 John Nolette Licensed under the MIT license.
