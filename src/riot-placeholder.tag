@@ -29,7 +29,7 @@
     }
   </style>
   <script>
-    const generator = new require('foobar-ipsum')()
+    const generator = new (require('foobar-ipsum'))()
     const type = this.root.localName
 
     switch (type) {
