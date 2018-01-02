@@ -2,14 +2,16 @@
   <style>
     @keyframes loading{
       0%{
-        background-position: -468px 0
+        background-position: -468px 0;
       }
       100%{
-        background-position: 468px 0
+        background-position: 468px 0;
       }
     }
-    :scope span.ph-mask {
+    :scope {
       cursor: default;
+    }
+    :scope span.ph-mask {
       animation-duration: 2s;
       animation-fill-mode: forwards;
       animation-iteration-count: infinite;
@@ -32,35 +34,50 @@
 
     switch (type) {
       case 'h1': case 'h2': case 'h3': case 'h4': case 'h5': case 'p': case 'span':
-        const tUnit = this.opts.unit
-        const size = this.opts.size
+        let unit = this.opts.unit
+        if (!unit) {
+          switch(type) {
+            case 'h1': case 'h2': case 'h3': case 'h4': case 'h5':
+              unit = 'word'
+              break
+            case 'span':
+              unit = 'sentence'
+              break
+            case 'p':
+              unit = 'paragraph'
+              break
+          }
+        }
+        const size = this.opts.size || 'md'
         const sizes = {
-            sentence: {
+          sentence: {
             sm: 5,
             md: 15,
             lg: 25
-            },
-            paragraph: {
+          },
+          paragraph: {
             sm: 3,
             md: 5,
             lg: 7
-            }
+          }
         }
         const masked = 'loading' in this.opts
-        switch (tUnit) {
+        switch (unit) {
           case 'word':
             const word = generator.word()
             this.root.innerHTML = masked ? `<span class="ph-mask">${word}</span>` : word
             break
           case 'sentence':
-            const sentence = generator.sentence(sizes[tUnit][size || 'md'])
+            const sentence = generator.sentence(sizes[unit][size])
             this.root.innerHTML = masked ? `<span class="ph-mask">${sentence}</span>` : sentence
             break
           case 'paragraph':
-            const paragraph = generator.paragraph(sizes[tUnit][size || 'md'], '<br />')
+            const paragraph = generator.paragraph(sizes[unit][size], '<br />')
             this.root.innerHTML = masked ? paragraph.split('.').filter(c => c)
             .map(sentence => {
-                return sentence.startsWith(' ') ? ` <span class="ph-mask">${sentence.trim()}</span>` : ` <span class="ph-mask">${sentence}</span>`
+                return sentence.startsWith(' ') ?
+                ` <span class="ph-mask">${sentence.trim()}</span>` :
+                ` <span class="ph-mask">${sentence}</span>`
             }).join(' ') : paragraph
             break
           default:
