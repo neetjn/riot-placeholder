@@ -37,6 +37,7 @@
     "eslint": "4.1.1",
     "eslint-loader": "1.6.1",
     "eslint-plugin-riot": "^0.1.7",
+    "foobar-ipsum": "1.0.3",
     "riot": "^3.7.4"
   }
 }
