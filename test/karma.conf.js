@@ -5,13 +5,12 @@ module.exports = function (config) {
     frameworks: ['jasmine', 'riot'],
     files: [
       'mocks.js',
-      '../dist/riot-view-router.js',
-      'e2e/helpers/*.js',
-      'e2e/spec.*.js'
+      '../dist/riot-placeholder.js',
+      'tag.test.js'
     ],
     reporters: ['progress', 'coverage'],
     preprocessors: {
-      '../dist/riot-view-router.js': ['coverage']
+      '../dist/riot-placeholder.js': ['coverage']
     },
     coverageReporter: {
       reporters: [
