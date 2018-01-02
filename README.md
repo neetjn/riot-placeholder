@@ -3,6 +3,8 @@
 [![build](https://travis-ci.org/neetjn/riot-placeholder.svg?branch=master)](https://travis-ci.org/neetjn/riot-placeholder/)
 
 [![NPM](https://nodei.co/npm/riot-placeholder.png)](https://nodei.co/npm/riot-placeholder/)
+[![npm version](https://badge.fury.io/js/riot-view-router.svg)](https://badge.fury.io/js/riot-view-router)
+[![codecov](https://codecov.io/gh/neetjn/riot-view-router/branch/master/graph/badge.svg)](https://codecov.io/gh/neetjn/riot-view-router)
 
 Riot.js tag for generating placeholder text and images.
 
