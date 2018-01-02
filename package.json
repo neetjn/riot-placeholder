@@ -6,7 +6,8 @@
   "scripts": {
     "build": "node_modules/.bin/riot src/riot-placeholder.tag dist/riot-placeholder.js --compact",
     "lint": "node_modules/.bin/eslint src/**.js",
-    "test": "npm run lint"
+    "test:unit": "node_modules/.bin/karma start test/karma.conf.js",
+    "test": "npm run lint && npm run test:unit"
   },
   "repository": {
     "type": "git",
