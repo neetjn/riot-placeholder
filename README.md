@@ -1,6 +1,8 @@
 # riot-placeholder
 
 [![build](https://travis-ci.org/neetjn/riot-placeholder.svg?branch=master)](https://travis-ci.org/neetjn/riot-placeholder/)
+[![npm version](https://badge.fury.io/js/riot-placeholder.svg)](https://badge.fury.io/js/riot-placeholder)
+[![codecov](https://codecov.io/gh/neetjn/riot-placeholder/branch/master/graph/badge.svg)](https://codecov.io/gh/neetjn/riot-placeholder)
 
 [![NPM](https://nodei.co/npm/riot-placeholder.png)](https://nodei.co/npm/riot-placeholder/)
 
@@ -68,7 +70,7 @@ Once available, **riot-placeholder** can be used like so:
 Contributing guidelines are as follows,
 
 * Any new features must include either unit test.
-* Branches for bugs and features should be structued like so, `issue-x-username`.
+  * Branches for bugs and features should be structured like so, `issue-x-username`.
 * Before putting in a pull request, be sure to verify you've built all your changes.
 * Include your name and email in the contributors list.
 
