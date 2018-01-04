@@ -8,7 +8,7 @@
     "riot": "global:riot"
   },
   "name": "riot-placeholder",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Riot.js tag for generating placeholder text and images.",
   "main": "dist/riot-placeholder.js",
   "scripts": {

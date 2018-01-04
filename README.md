@@ -32,10 +32,6 @@ For a quick start using jsdelivr:
 <script src="https://cdn.jsdelivr.net/npm/riot-placeholder/dist/riot-placeholder.js"></script>
 ```
 
-This tag takes a total of 3 conditional opts:
-
-> **`*...`** ; `string` : ...
-
 Once available, **riot-placeholder** can be used like so:
 
 ```html
