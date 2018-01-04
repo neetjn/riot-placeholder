@@ -34,9 +34,8 @@ describe('given a placeholder tag is referenced by an element', function() {
     mounted = riot.util.vdom.length // # store number of mounted tags before mount
     riot.mount('ph') // # must manually mount because of plugin load order
     expect(riot.util.vdom.length).toBe(mounted + 1)
-    const created = document.querySelector('img')
+    const created = document.querySelector('img.ph-img')
     expect(created.src.indexOf(`${height}x${width}`) > -1).toBeTruthy()
-    expect(created.className.indexOf('ph-img') > -1).toBeTruthy()
   })
 
 })
