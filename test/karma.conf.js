@@ -4,7 +4,6 @@ module.exports = function (config) {
     browsers: ['Electron'],
     frameworks: ['jasmine', 'riot'],
     files: [
-      'mocks.js',
       '../dist/riot-placeholder.js',
       'tag.test.js'
     ],
@@ -14,9 +13,9 @@ module.exports = function (config) {
     },
     coverageReporter: {
       reporters: [
-        {type : 'html', dir : '../coverage/'},
-        {type:'lcovonly', dir : '../coverage/'},
-        {type:'json', dir : '../coverage/'}
+        { type : 'html', dir : '../coverage/' },
+        { type:'lcovonly', dir : '../coverage/' },
+        { type:'json', dir : '../coverage/' }
       ]
     },
     port: 9876,

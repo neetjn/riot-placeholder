@@ -242,6 +242,7 @@ module.exports = riot.tag2('ph', '', '@keyframes loading{ 0%{ background-positio
           default:
             break
         }
+        break
       case 'img':
         this.root.className += 'ph-img'
         this.root.src = `http://via.placeholder.com/${this.root.height}x${this.root.width}`
