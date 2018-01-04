@@ -235,8 +235,8 @@ module.exports = riot.tag2('ph', '', '@keyframes loading{ 0%{ background-positio
             this.root.innerHTML = masked ? paragraph.split('.').filter(c => c)
             .map(sentence => {
                 return sentence.startsWith(' ') ?
-                ` <span class="ph-mask">${sentence.trim()}</span>` :
-                ` <span class="ph-mask">${sentence}</span>`
+                ` <span class="ph-mask">${sentence.trim()}.</span>` :
+                ` <span class="ph-mask">${sentence}.</span>`
             }).join(' ') : paragraph
             break
           default:
