@@ -10,7 +10,7 @@ Riot.js tag for generating placeholder text and images.
 
 ## About
 
-**riot-placeholder** is a simple riot tag used for scaffholding and prototyping riot.js based websites and applications.
+**riot-placeholder** is a simple riot tag used for scaffolding and prototyping riot.js based websites and applications.
 
 This tag doesn't depend on any css frameworks, and was built with [foobar-ipsum](https://github.com/neetjn/foobar-ipsum).
 
