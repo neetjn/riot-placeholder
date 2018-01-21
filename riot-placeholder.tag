@@ -86,7 +86,7 @@
         break
       case 'img':
         this.root.className += 'ph-img'
-        this.root.src = `http://via.placeholder.com/${this.root.height}x${this.root.width}`
+        this.root.src = `https://via.placeholder.com/${this.root.height}x${this.root.width}`
         break
     }
   </script>
