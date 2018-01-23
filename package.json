@@ -47,7 +47,7 @@
     "babel-preset-env": "^1.6.1",
     "browserify": "^14.5.0",
     "browserify-shim": "^3.8.14",
-    "electron": "^1.7.10",
+    "electron": "^1.7.11",
     "eslint": "4.1.1",
     "eslint-loader": "1.6.1",
     "eslint-plugin-riot": "^0.1.7",
