@@ -59,6 +59,11 @@ Once available, **riot-placeholder** can be used like so:
 </div>
 ```
 
+If using webpack and you don't want to expose riot to the client, you can import the tag like so:
+```js
+import 'riot-tag-loader!riot-placeholder/riot-placeholder.tag'
+```
+
 ### Contributors
 
 * **John Nolette** (john@neetgroup.net)
