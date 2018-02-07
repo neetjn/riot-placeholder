@@ -17,6 +17,7 @@ This tag was built with [foobar-ipsum](https://github.com/neetjn/foobar-ipsum).
 ### Examples
 
 * https://jsfiddle.net/neetjn/mhdLnund/
+* [riot-book-example](https://github.com/neetjn/riot-book-example)
 
 ## Usage
 
