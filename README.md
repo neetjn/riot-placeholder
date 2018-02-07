@@ -6,13 +6,13 @@
 
 [![NPM](https://nodei.co/npm/riot-placeholder.png)](https://nodei.co/npm/riot-placeholder/)
 
-Riot.js tag for generating placeholder text and images.
+Riot.js plugin for generating placeholder text.
 
 ## About
 
 **riot-placeholder** is a simple riot tag used for scaffolding and prototyping riot.js based websites and applications.
 
-This tag doesn't depend on any css frameworks, and was built with [foobar-ipsum](https://github.com/neetjn/foobar-ipsum).
+This tag was built with [foobar-ipsum](https://github.com/neetjn/foobar-ipsum).
 
 ### Examples
 
@@ -34,30 +34,34 @@ For a quick start using jsdelivr:
 
 Once available, **riot-placeholder** can be used like so:
 
-```html
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <h1 data-is="ph"></h1>
-    </div>
-    <div class="col-md-6">
-      <img data-is="ph" height="100" width="100" />
-    </div>
-  </div>
-  <hr />
-  <div class="row">
-    <div class="col-md-12">
-      <span data-is="ph" unit="sentence" size="lg"></span>
-    </div>
-  </div>
-  <hr />
-  <div class="row">
-    <div class="col-md-12">
-      <p data-is="ph" loading></p>
-    </div>
-  </div>
-</div>
+```js
+import riot from 'riot'
+import placeholder from 'riot-placeholder'
+
+placeholder(riot)
+
+console.log(`John said "${riot.placeholder.word()}" I tell you!`)
 ```
+
+```html
+<h1 data-is="ph"></h1>
+<!-- override default unit (word, sentence, paragraph) -->
+<!-- override default size (md) -->
+<span data-is="ph" unit="sentence" size="lg"></span>
+<p data-is="ph"></p>
+```
+
+The tag takes two configurable `opts`:
+
+> **`unit`**: Unit for generator to target.
+
+By default, the tag will automatically determine the unit depending on the target node.
+
+* *word*: `h1`, `h2`, `h3`, `h4`, `h5`
+* *sentence*: `span`
+* *paragraph*: `p`
+
+> **`size`**: Size of the generated content (`sm`, `md`, `lg`).
 
 ### Contributors
 

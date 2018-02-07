@@ -1,19 +1,11 @@
 {
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
-  "browserify-shim": {
-    "riot": "global:riot"
-  },
   "name": "riot-placeholder",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Riot.js tag for generating placeholder text and images.",
   "main": "dist/riot-placeholder.js",
   "scripts": {
-    "build": "./node_modules/.bin/browserify -t riotify tag.js > dist/riot-placeholder.js",
-    "lint": "node_modules/.bin/eslint riot-placeholder.js",
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "lint": "node_modules/.bin/eslint src/**.js",
     "test:unit": "node_modules/.bin/karma start test/karma.conf.js",
     "test": "npm run lint && npm run test:unit"
   },
@@ -37,20 +29,16 @@
     "url": "https://github.com/neetjn/riot-placeholder/issues"
   },
   "homepage": "https://github.com/neetjn/riot-placeholder#readme",
-  "dependencies": {
-    "foobar-ipsum": "1.0.3"
-  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.2",
     "babel-plugin-add-module-exports": "^0.2.1",
     "babel-preset-env": "^1.6.1",
-    "browserify": "^14.5.0",
-    "browserify-shim": "^3.8.14",
     "electron": "^1.7.11",
     "eslint": "4.1.1",
     "eslint-loader": "1.6.1",
-    "eslint-plugin-riot": "^0.1.7",
+    "foobar-ipsum": "1.0.3",
     "jasmine": "2.5.2",
     "karma": "^1.7.1",
     "karma-coverage": "^1.1.1",
@@ -58,6 +46,6 @@
     "karma-jasmine": "^1.1.0",
     "karma-riot": "^2.0.0",
     "riot": "^3.7.4",
-    "riotify": "^2.0.0"
+    "webpack": "^3.10.0"
   }
 }
