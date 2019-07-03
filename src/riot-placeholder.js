@@ -1,11 +1,14 @@
 import Generator from 'foobar-ipsum'
-import Tag from './riot-placeholder.tag'
+import Component from './riot-placeholder.tag'
+
+const generator = new Generator()
 
 /**
  * Placeholder tag and text generator mixin.
- * @param {riot} instance - Riot instance to transform.
+ * @param {riot.install} install - Riot plugin installer.
+ * @param {riot.component} component - Riot component reference.
  */
-export default function Placeholder(instance) {
-  instance.mixin({ placeholder: new Generator() })
-  instance.tag('ph', false, false, false, Tag)
+export default function Placeholder(install, component) {
+  installer(component => (component.placeholder = generator))
+  component('ph', false, false, false, Tag)
 }
