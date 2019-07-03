@@ -30,22 +30,13 @@
   },
   "homepage": "https://github.com/neetjn/riot-placeholder#readme",
   "devDependencies": {
-    "babel-core": "^6.26.0",
-    "babel-eslint": "^7.2.3",
-    "babel-loader": "^7.1.2",
-    "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-env": "^1.6.1",
-    "electron": "^1.7.11",
-    "eslint": "4.1.1",
-    "eslint-loader": "1.6.1",
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
     "foobar-ipsum": "1.0.3",
-    "jasmine": "2.5.2",
-    "karma": "^1.7.1",
-    "karma-coverage": "^1.1.1",
-    "karma-electron": "^5.2.1",
-    "karma-jasmine": "^1.1.0",
-    "karma-riot": "^2.0.0",
-    "riot": "^3.7.4",
-    "webpack": "^3.10.0"
+    "jest": "^24.8.0",
+    "jest-dom": "^3.5.0",
+    "riot": "^4.3.1",
+    "webpack": "^4.35.2",
+    "webpack-cli": "^3.3.5"
   }
 }
